@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>reTwo | Software, Refined.</title>
     <style>
+        /* Base Reset & Layout */
         body {
             background-color: #000000;
             color: #ffffff;
@@ -13,33 +14,80 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            height: 100vh;
+            min-height: 100vh; 
             text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
         }
-        .container { max-width: 600px; padding: 20px; }
-        h1 { font-size: 3rem; font-weight: 800; letter-spacing: -1px; margin-bottom: 10px; }
+        
+        /* Main Content Container */
+        .container { 
+            max-width: 650px; 
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        /* Typography */
+        h1 { font-size: 3.5rem; font-weight: 800; letter-spacing: -1.5px; margin-bottom: 10px; }
         span.re { color: #ffffff; }
-        span.two { color: #8A2BE2; } /* Cyber Purple */
-        p { color: #8E8E93; font-size: 1.2rem; line-height: 1.6; }
-        .apps { margin-top: 40px; display: flex; gap: 20px; justify-content: center; }
-        .app-card { border: 1px solid #1C1C1E; padding: 15px; border-radius: 12px; background: #0A0A0A; width: 180px; }
-        .app-card h3 { margin: 0; font-size: 1rem; color: #00FFFF; } /* Neon Cyan */
-        .app-card p { font-size: 0.8rem; margin: 5px 0 0; }
-        footer { position: absolute; bottom: 30px; font-size: 0.8rem; color: #48484A; }
-        a { color: #48484A; text-decoration: none; margin: 0 10px; }
+        span.two { color: #8A2BE2; }
+        p.intro { color: #8E8E93; font-size: 1.15rem; line-height: 1.6; margin-bottom: 40px;}
+        
+        .apps { 
+            display: flex; 
+            flex-wrap: wrap;
+            gap: 20px; 
+            justify-content: center; 
+        }
+        .app-card { 
+            border: 1px solid #1C1C1E; 
+            padding: 20px; 
+            border-radius: 12px; 
+            background: #0A0A0A; 
+            width: 220px; 
+            text-align: left;
+            transition: border-color 0.3s ease;
+        }
+        .app-card:hover { border-color: #8A2BE2; } /* Added subtle hover effect */
+        .app-card h3 { margin: 0; font-size: 1.1rem; color: #00FFFF; letter-spacing: -0.5px;} /* Neon Cyan */
+        .app-card p { font-size: 0.85rem; color: #8E8E93; margin: 8px 0 0; line-height: 1.4;}
+        
+        /* Footer */
+        footer { 
+            margin-top: 40px;
+            padding-bottom: 20px;
+            font-size: 0.8rem; 
+            color: #48484A; 
+            line-height: 1.8;
+        }
+        .address { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; } /* Technical look for address */
+        a { color: #48484A; text-decoration: none; margin: 0 10px; transition: color 0.2s ease; }
         a:hover { color: #ffffff; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1><span class="re">re</span><span class="two">Two</span></h1>
-        <p>A boutique software studio building high-performance, native applications for the Apple ecosystem. We believe in the second pass, refining code until bug disappears.</p>
+        
+        <p class="intro">A boutique software studio building high-performance, native applications for the Apple ecosystem. We believe in the second pass, refining our code until the experience is flawless.</p>
+        
+        <div class="apps">
+            <div class="app-card">
+                <h3>Vanta Player</h3>
+                <p>A zero-index, high-performance media terminal and network playback utility for tvOS and iOS.</p>
+            </div>
+            <div class="app-card">
+                <h3>Teller AI</h3>
+                <p>A private, local-first, AI Powered financial tracking utility designed for absolute data security.</p>
+            </div>
+        </div>
     </div>
 
     <footer>
-        &copy; 2026 ReTwo LLC
-        <br><br>
+        &copy; 2026 ReTwo LLC<br>
+        <span class="address">502 W 7TH St Ste 100, Erie, PA 16502, United States</span><br><br>
         <a href="privacy.html">Privacy Policy</a> | <a href="mailto:hello@retwo.io">Contact</a>
     </footer>
 </body>
