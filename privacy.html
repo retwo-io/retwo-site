@@ -1,83 +1,483 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy | reTwo</title>
-    <style>
-        body { 
-            background-color: #000000; 
-            color: #8E8E93; 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6; 
-            padding: 40px 20px; 
-            max-width: 650px; 
-            margin: auto; 
+    <meta name="description" content="Privacy Policy for reTwo and its applications.">
+    <link rel="icon" type="image/png" href="assets/plio-icon.png">
+
+<title>Privacy Policy | reTwo</title>
+
+<style>
+    :root {
+        --background: #0b0b0c;
+        --surface: #111113;
+        --border: #242428;
+        --text: #f5f5f7;
+        --secondary: #a1a1a6;
+        --muted: #6e6e73;
+        --link: #d6d6d8;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0;
+        background: var(--background);
+        color: var(--secondary);
+        font-family:
+            -apple-system,
+            BlinkMacSystemFont,
+            "SF Pro Display",
+            "SF Pro Text",
+            "Segoe UI",
+            Roboto,
+            Helvetica,
+            Arial,
+            sans-serif;
+        line-height: 1.7;
+    }
+
+    .page {
+        width: min(760px, calc(100% - 40px));
+        margin: 0 auto;
+        padding: 72px 0 80px;
+    }
+
+    header {
+        padding-bottom: 48px;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .brand {
+        font-size: 17px;
+        font-weight: 600;
+        letter-spacing: -.4px;
+        color: var(--text);
+        text-decoration: none;
+        display: inline-flex;
+        margin-bottom: 36px;
+    }
+
+    .brand span {
+        color: #aeb3b0;
+        font-weight: 400;
+    }
+
+    h1 {
+        margin: 0 0 10px;
+        color: var(--text);
+        font-size: clamp(2.2rem, 6vw, 3.25rem);
+        line-height: 1.1;
+        letter-spacing: -1.8px;
+        font-weight: 700;
+    }
+
+    .updated {
+        margin: 0;
+        color: var(--muted);
+        font-size: 14px;
+    }
+
+    main {
+        padding-top: 48px;
+    }
+
+    .intro {
+        color: #c7c7cc;
+        font-size: 17px;
+        line-height: 1.75;
+        margin: 0 0 52px;
+    }
+
+    section {
+        margin: 0 0 44px;
+    }
+
+    h2 {
+        margin: 0 0 14px;
+        color: var(--text);
+        font-size: 18px;
+        line-height: 1.35;
+        letter-spacing: -0.3px;
+        font-weight: 600;
+    }
+
+    p {
+        margin: 0 0 16px;
+        font-size: 15px;
+    }
+
+    ul {
+        margin: 12px 0 0;
+        padding-left: 22px;
+    }
+
+    li {
+        margin: 8px 0;
+        font-size: 15px;
+    }
+
+    a {
+        color: var(--link);
+        text-decoration: underline;
+        text-decoration-color: #4a4a4f;
+        text-underline-offset: 3px;
+    }
+
+    a:hover {
+        text-decoration-color: var(--text);
+    }
+
+    .contact {
+        padding: 24px;
+        margin-top: 8px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+    }
+
+    footer {
+        margin-top: 64px;
+        padding-top: 24px;
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .footer-links {
+        display: flex;
+        gap: 20px;
+    }
+
+    .copyright {
+        color: #4f5355;
+    }
+
+    @media (max-width: 600px) {
+        .page {
+            padding-top: 48px;
+            padding-bottom: 56px;
         }
-        h1 { 
-            color: #ffffff; 
-            font-size: 2.5rem;
-            letter-spacing: -1px;
-            margin-bottom: 5px;
+
+        header {
+            padding-bottom: 36px;
         }
-        h2 { 
-            color: #ffffff; 
-            margin-top: 40px; 
-            font-size: 1.2rem;
-            border-bottom: 1px solid #1C1C1E;
-            padding-bottom: 10px;
+
+        main {
+            padding-top: 36px;
         }
-        p.date {
-            color: #A1A1A6;      /* Lighter, readable grey */
-            font-size: 0.95rem;  /* Slightly larger */
-            margin-top: 0;
-            margin-bottom: 30px;
+
+        .intro {
+            font-size: 16px;
         }
-        a { 
-            color: #8A2BE2;      /* Keep inline links purple so they look like links */
-            text-decoration: none; 
-            transition: color 0.2s ease;
-        }
-        a:hover { 
-            color: #00FFFF;      /* Neon Cyan hover */
-        }
-        .back-link {
-            display: inline-block;
-            margin-top: 50px;
-            font-size: 0.9rem;
-        }
-    </style>
+    }
+</style>
+
 </head>
+
 <body>
-    <h1>Privacy Policy</h1>
-    <p class="date">Last Updated: February 2026</p>
-    
-    <p>ReTwo LLC ("we", "us", or "our") is committed to protecting your privacy. This policy explains how we handle data across our applications, including Vanta and Ledger.</p>
-    
-    <h2>1. Data Collection</h2>
-    <p>We believe your data belongs to you. Our applications are designed to be "Stateless." We do not host your media or financial files. Connection data to your personal servers (e.g., Jellyfin) is stored locally on your device and is never transmitted to our servers.</p>
-    
-    <h2>2. Third-Party APIs & Services</h2>
-    <p>Our apps may connect to third-party APIs (such as TMDB for metadata or user-provided REST/WebDAV endpoints for remote storage) strictly at the user's request. Your credentials and API tokens for these services are stored securely in the local Apple Keychain and are never visible to ReTwo LLC.</p>
+    <div class="page">
 
-    <!-- NEW SECTION -->
-    <h2>3. Linked Accounts (e.g., Trakt.tv)</h2>
-    <p>If you choose to link third-party tracking services (such as Trakt) to sync your watch history, the authentication is handled securely via standard OAuth protocols. ReTwo LLC does not intercept or store your passwords for these services. You may revoke access to these services at any time from within the app settings.</p>
-    
-    <h2>4. Analytics & Crash Reporting</h2>
-    <p>We may use anonymous telemetry provided by Apple (App Store Connect) to improve application performance and catch crashes. This data contains no personally identifiable information (PII) and no information about your specific media libraries, file names, or viewing habits.</p>
-    
-    <!-- NEW SECTION -->
-    <h2>5. Data Sharing & Disclosure</h2>
-    <p>We do not sell, rent, or trade your personal information to third parties. Because our apps are local-first, we do not possess a centralized database of our users' private media or financial data to share.</p>
+    <header>
+        <a class="brand" href="index.html">re<span>Two</span></a>
 
-    <!-- NEW SECTION -->
-    <h2>6. Your Data Rights</h2>
-    <p>If you contact us for customer support, we will retain your email address solely for the purpose of resolving your issue. You have the right to request the deletion of any correspondence or support data we hold regarding you at any time.</p>
+        <h1>Privacy Policy</h1>
+        <p class="updated">Last updated: September 8, 2026</p>
+    </header>
 
-    <h2>7. Contact</h2>
-    <p>For questions regarding privacy, data handling, or to exercise your data rights, please contact us at <a href="mailto:legal@retwo.io">legal@retwo.io</a>.</p>
-    
-    <a href="index.html" class="back-link">&larr; Back to Home</a>
+    <main>
+
+        <p class="intro">
+            reTwo LLC ("reTwo", "we", "us", or "our") respects your privacy.
+            This Privacy Policy explains how information is handled when you
+            use Plio and describes the choices available to you.
+        </p>
+
+        <section>
+            <h2>1. Information We Collect</h2>
+
+            <p>
+                Plio is designed to work primarily with media libraries and
+                services that you configure yourself. We aim to collect only
+                the information necessary to provide and improve the
+                application.
+            </p>
+
+            <p>
+                Depending on how you use Plio, information may be stored
+                locally on your device, including:
+            </p>
+
+            <ul>
+                <li>Media library and connection configuration.</li>
+                <li>Profile information and application preferences.</li>
+                <li>Playback progress, favorites, and other library-related state.</li>
+                <li>Credentials and authentication tokens for services you connect.</li>
+            </ul>
+
+            <p>
+                Information stored locally by Plio is not automatically
+                transmitted to reTwo.
+            </p>
+        </section>
+
+        <section>
+            <h2>2. Connections to Your Services</h2>
+
+            <p>
+                Plio can connect to services and media servers that you
+                choose to configure, such as Jellyfin and WebDAV-compatible
+                storage.
+            </p>
+
+            <p>
+                When you configure a service, Plio communicates directly
+                with that service as necessary to provide its functionality.
+                reTwo does not operate or host your personal media library.
+            </p>
+
+            <p>
+                Connection credentials and authentication tokens are stored
+                using Apple's secure Keychain services where applicable.
+                reTwo does not receive or have access to these credentials
+                through the normal operation of Plio.
+            </p>
+        </section>
+
+        <section>
+            <h2>3. Third-Party Services</h2>
+
+            <p>
+                Plio may communicate with third-party services when you
+                explicitly enable or use features that require them.
+            </p>
+
+            <p>
+                These services may include media metadata providers,
+                synchronization services, payment and subscription
+                infrastructure, and other services necessary to provide
+                optional application functionality.
+            </p>
+
+            <p>
+                Information shared with a third-party service is governed
+                by that service's own privacy policy and the permissions
+                associated with the feature you enable.
+            </p>
+        </section>
+
+        <section>
+            <h2>4. Account Synchronization</h2>
+
+            <p>
+                If you choose to connect a third-party account, such as a
+                media tracking or synchronization service, Plio may exchange
+                information with that service to provide the requested
+                functionality.
+            </p>
+
+            <p>
+                Authentication may be performed using OAuth or another
+                authentication mechanism supported by the service. reTwo
+                does not request or store your third-party account password
+                when authentication is handled by that provider.
+            </p>
+
+            <p>
+                You can disconnect supported third-party services through
+                Plio or through the third-party provider, where applicable.
+            </p>
+        </section>
+
+        <section>
+            <h2>5. Purchases and Subscriptions</h2>
+
+            <p>
+                Plio may offer paid features or subscriptions. Purchases
+                made through Apple's App Store are processed by Apple.
+            </p>
+
+            <p>
+                Plio may use RevenueCat to manage subscription status and
+                entitlement information. RevenueCat may receive information
+                necessary to associate a purchase with an anonymous or
+                application-specific customer record and determine which
+                features are available to you.
+            </p>
+
+            <p>
+                Payment card and other payment information used for App
+                Store purchases is handled by Apple and is not provided to
+                reTwo through Plio.
+            </p>
+        </section>
+
+        <section>
+            <h2>6. Analytics and Diagnostics</h2>
+
+            <p>
+                We may use Apple's App Store and platform-provided
+                diagnostics, as well as limited third-party diagnostics
+                where necessary, to understand crashes, performance
+                problems, and application reliability.
+            </p>
+
+            <p>
+                We do not use analytics to build a profile of your personal
+                media library or intentionally collect the contents of your
+                media files.
+            </p>
+        </section>
+
+        <section>
+            <h2>7. Information We Do Not Sell</h2>
+
+            <p>
+                We do not sell, rent, or trade your personal information.
+                We do not sell information about your media library,
+                playback activity, or connected services for advertising
+                purposes.
+            </p>
+        </section>
+
+        <section>
+            <h2>8. Data Retention</h2>
+
+            <p>
+                Information stored locally by Plio generally remains on
+                your device until you remove it, disconnect a service,
+                delete the application, or otherwise remove the associated
+                data.
+            </p>
+
+            <p>
+                Information provided to reTwo through support requests or
+                other direct communications may be retained for as long as
+                reasonably necessary to respond to your request, maintain
+                business records, or comply with applicable legal
+                obligations.
+            </p>
+        </section>
+
+        <section>
+            <h2>9. Data Security</h2>
+
+            <p>
+                We use reasonable technical and organizational measures
+                designed to protect information handled by our services.
+                Sensitive credentials used by Plio are stored using
+                Apple's security mechanisms where applicable.
+            </p>
+
+            <p>
+                No method of electronic storage or transmission can be
+                guaranteed to be completely secure.
+            </p>
+        </section>
+
+        <section>
+            <h2>10. Children's Privacy</h2>
+
+            <p>
+                Plio is not directed toward children under the age of 13.
+                We do not knowingly collect personal information from
+                children under 13.
+            </p>
+
+            <p>
+                If you believe that a child has provided personal
+                information to reTwo, please contact us so that we can
+                take appropriate action.
+            </p>
+        </section>
+
+        <section>
+            <h2>11. Your Choices</h2>
+
+            <p>
+                You control which media servers, storage services, and
+                optional third-party services you connect to Plio.
+            </p>
+
+            <p>
+                You can remove connected services and locally stored
+                application data through Plio or your device's settings,
+                depending on the feature.
+            </p>
+
+            <p>
+                If you have provided information directly to reTwo, you may
+                contact us to request access to, correction of, or deletion
+                of that information, subject to applicable legal
+                requirements.
+            </p>
+        </section>
+
+        <section>
+            <h2>12. Changes to This Policy</h2>
+
+            <p>
+                We may update this Privacy Policy from time to time to
+                reflect changes to Plio, our services, or applicable legal
+                requirements.
+            </p>
+
+            <p>
+                When we make changes, we will update the "Last updated"
+                date at the top of this page. Your continued use of Plio
+                after an updated policy becomes effective constitutes
+                acceptance of the revised policy to the extent permitted
+                by applicable law.
+            </p>
+        </section>
+
+        <section>
+            <h2>13. Contact Us</h2>
+
+            <div class="contact">
+                <p>
+                    If you have questions about this Privacy Policy or how
+                    reTwo handles information, please contact us at:
+                </p>
+
+                <p>
+                    <a href="mailto:legal@retwo.io">legal@retwo.io</a>
+                </p>
+
+                <p>
+                    reTwo LLC<br>
+                    502 W 7TH St Ste 100<br>
+                    Erie, PA 16502<br>
+                    United States
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="terms.html">Terms</a>
+            <a href="mailto:hello@retwo.io">Contact</a>
+        </div>
+        <div class="copyright">
+            &copy; 2026 reTwo LLC. All rights reserved.
+        </div>
+    </footer>
+
+</div>
+
 </body>
 </html>
