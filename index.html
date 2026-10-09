@@ -289,20 +289,24 @@
         }
 
         .product-cta {
-            margin-top: 32px;
+            margin-top: 28px;
         }
 
-        .cta-button {
-            display: inline-flex;
-            align-items: center;
-            padding: 10px 20px;
-            background: rgba(255, 255, 255, 0.08);
-            border: 1px solid var(--border-strong);
-            border-radius: 30px;
-            color: var(--text);
-            font-size: 14px;
-            font-weight: 500;
-            cursor: default;
+        .app-store-badge-link {
+            display: inline-block;
+            line-height: 0;
+            transition: opacity .2s ease, transform .2s ease;
+        }
+
+        .app-store-badge-link:hover {
+            opacity: 0.85;
+            transform: translateY(-1px);
+        }
+
+        .app-store-badge {
+            height: 42px;
+            width: auto;
+            display: block;
         }
 
         /* Product visual */
@@ -715,7 +719,18 @@
                         </p>
                         
                         <div class="product-cta">
-                            <div class="cta-button">Coming soon to the App Store</div>
+                            <a
+                                href="https://apps.apple.com/us/app/plio-universal-media-player/id6786546470"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="app-store-badge-link"
+                            >
+                                <img
+                                    src="assets/app-store-badge.svg"
+                                    alt="Download on the App Store"
+                                    class="app-store-badge"
+                                >
+                            </a>
                         </div>
                     </div>
 
